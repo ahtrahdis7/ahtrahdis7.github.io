@@ -18,7 +18,7 @@ class Current extends React.Component{
 
         return(
             <View>
-                <Text>Records Screen</Text>
+                <Text>Current Screen</Text>
             </View>
         )
     }

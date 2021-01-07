@@ -1,24 +1,23 @@
 import 'react-native-gesture-handler';
 import React from 'react';
+import { NavigationContainer, DarkTheme } from '@react-navigation/native';
+
 import {
-  SafeAreaView,
-  StyleSheet,
+//   SafeAreaView,
+//   StyleSheet,
   // ScrollView,
-  // View,
+  View,
   // Text,
-  StatusBar,
+//   StatusBar,
 } from 'react-native';
+
 import Taskit from './src/TaskitNavigator'
 
-const App: () => React$Node = () => {
+export default function App() {
     return (
-        <>
-            <StatusBar barStyle="dark-content" />
-            <SafeAreaView>
-                <Taskit />
-            </SafeAreaView>
-        </>
-    );
+        <NavigationContainer>
+            <Taskit />
+        </NavigationContainer>
+    )
 };
 
-export default App;
