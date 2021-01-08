@@ -37,8 +37,8 @@ class Taskit extends React.Component{
                 activeBackgroundColor: 'white',
                 style: {
                     backgroundColor: '#000',
-                    paddingBottom: 5
-                }
+                    paddingBottom: 5,
+                },
             }}>
                 <TabNavigator.Screen name="DOCK" component={Dock} />
                 <TabNavigator.Screen name="CURRENT" component={Current} />

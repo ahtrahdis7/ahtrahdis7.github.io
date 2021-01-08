@@ -5,6 +5,18 @@ const windowHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
     container: {
+        paddingBottom: 10,
+		backgroundColor: '#000111'
+    },
+    image: {
+        height: 150,
+        width: 150,
+    },
+    cardView: {
+        flexDirection: 'row'
+    },
+    cardRight:{
+        marginLeft: 10,
         
     }
 });
