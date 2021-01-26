@@ -1,8 +1,8 @@
 import React from 'react'
 import {
     Typography,
-    Card,
-    Paper
+    // Card,
+    // Paper
 } from '@material-ui/core';
 
 class Projects extends React.Component {

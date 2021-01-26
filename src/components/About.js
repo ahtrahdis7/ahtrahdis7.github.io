@@ -20,7 +20,7 @@ import nav from '../tech_Icons/nav.png'
 // import mmui from '../tech_Icons/mmui.png'
 // import node from '../tech_Icons/node.png'
 import react from '../tech_Icons/react.png'
-// import flask from '../tech_Icons/flask.png'
+import flask from '../tech_Icons/flask.png'
 // import cpp from '../tech_Icons/c++.png'
 import mui from '../tech_Icons/mui.png'
 import mongo from '../tech_Icons/mongo.png'
@@ -72,7 +72,7 @@ class About extends React.Component {
                                 }}>Machine Learning Engineer</Typography>
                                 <Typography variant="h6" style={{
                                     fontFamily: 'ComicNeue'
-                                }}>With a keen inclination towards open source ecosystem.</Typography>
+                                }}>With a keen inclination towards the open source ecosystem.</Typography>
                             </div>
                         </Grid>
                     </Grid>
@@ -107,8 +107,8 @@ class About extends React.Component {
                         {/* <img src={rn} height="80" width="80" /> */}
                         <img src={react} height="100" width="130" alt='react' />
                         {/* <img src={java} height="80" width="60" /> */}
-                        <img src={mongo} height="80" width="210" />
-                        {/* <img src={flask} height="80" width="80" /> */}
+                        <img src={mongo} height="80" width="210" alt="mongo" />
+                        <img src={flask} height="80" width="80" alt="flask" />
                         <img src={mui} height="100" width="100"  alt='mui'/>
                         {/* <img src={mmui} height="80" width="100" /> */}
                         <img src={redux} height="80" width="80" alt='redux' />

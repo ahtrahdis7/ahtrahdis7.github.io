@@ -10,6 +10,7 @@ import Divider from '@material-ui/core/Divider';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import Social from '../components/Social';
 
 class Main extends React.Component{
 
@@ -46,6 +47,7 @@ class Main extends React.Component{
                 <div>
                     <h1>Footer</h1>
                 </div>
+                <Social />
             </div>
         )
     }
