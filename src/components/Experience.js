@@ -10,19 +10,13 @@ import {
 import { ExpData } from './ExperienceData';
 import { Divider } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-// const Tasks = (props) => {
-//     const [show, setShow] = React.useState(false);
-
-//     if(show) {
-//         return(
-//             <div>True</div>
-//         )
-//     } else {
-//         return(
-//             <div>False</div>
-//         )
-//     }
-// }
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 
 class ExpCard extends React.Component{
 
@@ -59,10 +53,10 @@ class ExpCard extends React.Component{
                         fontFamily: 'ComicNeue',
                         color: '#293863'
                     }} variant="h6">{exp.company}</Typography>
-                    <Typography style={{
+                    {/* <Typography style={{
                         fontFamily: 'ComicNeue',
                         color: '#293863'
-                    }} variant="h7">{exp.from} - {exp.to}</Typography>
+                    }} variant="h7">{exp.from} - {exp.to}</Typography> */}
                 </div>
                 <div>
                     <Typography style={{
@@ -117,6 +111,7 @@ class ExpCard extends React.Component{
     }
 }
 
+
 class Experience extends React.Component {
     constructor(props){
         super(props);
@@ -141,11 +136,27 @@ class Experience extends React.Component {
                         color: 'grey',
                         marginBottom: '1cm'
                     }} variant="h4" >Work Experience</Typography>
-                    {
-                        ExpData.map((exp) =>  {
-                            return <ExpCard exp={exp} />
-                        })
-                    }
+                    <Timeline align="alternate">
+                        {
+                            ExpData.map((exp) =>  {
+                                return (
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography color={exp.key%2 == 0 ? "primary" : "secondary"}>{exp.from}</Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot variant="outlined" color={exp.key%2 == 0 ? "primary" : "secondary"} />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent>
+                                            <ExpCard exp={exp} />
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                )
+                            })
+                        }
+                    </Timeline>
+                    
                 </Container>
             </div>
         )
