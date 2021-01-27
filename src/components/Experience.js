@@ -42,23 +42,15 @@ class ExpCard extends React.Component{
         return(
             <Card key={exp.key} onClick={this.handleClick} style={{
                 padding: 10,
-                margin: 10
+                margin: 0
             }} >
                 <div style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between'
+
                 }}>
                     <Typography style={{
                         fontFamily: 'ComicNeue',
                         color: '#293863'
                     }} variant="h6">{exp.company}</Typography>
-                    {/* <Typography style={{
-                        fontFamily: 'ComicNeue',
-                        color: '#293863'
-                    }} variant="h7">{exp.from} - {exp.to}</Typography> */}
-                </div>
-                <div>
                     <Typography style={{
                         fontFamily: 'ComicNeue',
                         color: 'grey'
@@ -69,33 +61,31 @@ class ExpCard extends React.Component{
                         <div style={{
                             display: 'flex',
                             flexDirection: 'column',
-                            alignItems: 'flex-start',
+                            // alignItems: 'flex-start',
                         }}>
-                            <Divider />
                             {
                                 exp.tasks.map(task => { return (<Typography style={{
                                     fontFamily: 'ComicNeue',
                                     color: 'grey'
                                 }} variant="h7" >{task}</Typography>) })
                             }
-                            <Divider />
                         </div>
                     ):(<div></div>)
                 }
                 {
                     this.state.show ? (
                         <div style={{
-                            display: 'flex',
-                            flexDirection: 'row',
-                            alignItems: 'flex-start',
-                            flexWrap: 'wrap',
+                            // display: 'flex',
+                            // flexDirection: 'row',
+                            // alignItems: 'flex-start',
+                            // flexWrap: 'wrap',
                         }}>
                             {
                                 exp.techstack.map(stack => {return(<Typography style={{
                                     fontFamily: 'ComicNeue',
-                                    color: 'grey',
-                                    marginLeft: 5
-                                }} variant="h7">{stack}</Typography>)})
+                                    color: 'greyblue',
+                                    marginLeft: 1
+                                }} variant="h7">{stack},</Typography>)})
                             }
                         </div>
                     ):(<div style={{

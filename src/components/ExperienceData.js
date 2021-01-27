@@ -6,10 +6,9 @@ export const ExpData = [{
     "to": "Present",
     "position": "React Native Developer",
     "tasks": [
-        "• Co-developed the Juglr App.",
-        "• Wrote an ocr server in flask.",
-        "• Wrote it's backend in nodejs",
-        "• Used cloud for hosting services."
+        "Co-developed the Juglr App.",
+        "Wrote an ocr server in flask and it's backend in nodejs",
+        "Used cloud for hosting services."
     ]
 },{
     "key": 1,
@@ -19,8 +18,8 @@ export const ExpData = [{
     "to": "Oct 2020",
     "position": "Backend | NodeJs Developer",
     "tasks": [
-        "• Developed REST API for marketgad.com using NodeJs and Express.",
-        "• Collaborated with the front-end team to improve UX."
+        "Developed REST API for marketgad.com using NodeJs and Express.",
+        "Collaborated with the front-end team to improve UX."
     ]
 }]
 
