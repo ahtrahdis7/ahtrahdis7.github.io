@@ -11,6 +11,7 @@ import About from '../components/About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Social from '../components/Social';
+import CodeIcon from '@material-ui/icons/Code';
 
 class Main extends React.Component{
 
@@ -25,29 +26,67 @@ class Main extends React.Component{
                         <Toolbar style={{
                             backgroundColor: 'white'
                         }}>
-                            <Container>
+                            <Container style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                alignContent: 'space-between'
+                            }}>
                                 <Typography variant="h5" style={{
                                     flexGrow: 1,
                                     color: 'black',
                                     fontFamily: 'ComicNeue'
                                 }}>Ahtrahdis7</Typography>
+                                <div style={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems:  'flex-end'
+                                }}>
+                                    <a href="#experience" style={{
+                                        color: 'white'
+                                    }}>
+                                    <Typography variant="h6" style={{
+                                        flexGrow: 1,
+                                        color: 'black',
+                                        fontFamily: 'ComicNeue',
+                                        marginLeft: 10,
+                                        marginRight: 10,
+                                    }}> Experience</Typography>
+                                    </a>
+                                    <a href="#projects" style={{
+                                        color: 'white'
+                                    }}>
+                                    <Typography variant="h6" style={{
+                                        flexGrow: 1,
+                                        color: 'black',
+                                        fontFamily: 'ComicNeue',
+                                        marginLeft: 10,
+                                        marginRight: 10
+                                    }}>Projects</Typography>
+                                    </a>
+                                </div>
                             </Container>
                         </Toolbar>
                     </AppBar>
                 </div>
                 <Divider />
-                <About />
+                <div id="about">
+                    <About />
+                </div>
                 <Divider style={{
                     height: 1
                 }}  />
-                <Experience />
+                <div id="experience">
+                    <Experience />
+                </div>
                 <Divider />
-                <Projects />
+                <div id="projects">
+                    <Projects />
+                </div>
                 <Divider />
                 <div>
                     <h1>Footer</h1>
                 </div>
-                <Social />
+                {/* <Social /> */}
             </div>
         )
     }

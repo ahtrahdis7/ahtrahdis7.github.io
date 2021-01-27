@@ -24,6 +24,8 @@ import flask from '../tech_Icons/flask.png'
 // import cpp from '../tech_Icons/c++.png'
 import mui from '../tech_Icons/mui.png'
 import mongo from '../tech_Icons/mongo.png'
+import tfjs from '../tech_Icons/tfjs.png'
+import Social from './Social';
 
 class About extends React.Component {
 
@@ -43,7 +45,7 @@ class About extends React.Component {
                     <Grid container>
                         <Grid item xs={12} md={5}>
                             <div style={{
-                                    padding: 5,
+                                    padding: 1,
                             }}>
                                 <img src={ProfilePic} height="400" width="400" alt='prof' />
                             </div>
@@ -59,61 +61,85 @@ class About extends React.Component {
                                     padding: 10,
                             }}>
                                 <Typography variant="h5" style={{
+                                    color: 'grey',
+                                    fontFamily: 'ComicNeue'
+                                }}>Hey There,</Typography>
+                                <Typography variant="h2" style={{
+                                color: 'grey',
                                 fontFamily: 'ComicNeue'
-                                }}>I am a </Typography>
+                                }}>I'm <span style={{color: '#293863'}}>Sidhartha</span> </Typography>
                                 <Typography variant="h3" style={{
+                                    color: 'grey',
                                     fontFamily: 'ComicNeue'
-                                }}>React Native App Developer</Typography>
+                                }}>React Native Developer</Typography>
                                 <Typography variant="h4" style={{
+                                    color: 'grey',
                                     fontFamily: 'ComicNeue'
-                                }}>Full Stack Javascript Developer</Typography>
+                                }}>Full Stack Javascript</Typography>
                                 <Typography variant="h5" style={{
+                                    color: 'grey',
                                     fontFamily: 'ComicNeue'
                                 }}>Machine Learning Engineer</Typography>
                                 <Typography variant="h6" style={{
+                                    color: 'grey',
                                     fontFamily: 'ComicNeue'
                                 }}>With a keen inclination towards the open source ecosystem.</Typography>
+                                <Social />
                             </div>
                         </Grid>
                     </Grid>
                     
                 </Container>
-                <Divider variant='fullWidth' />
+                {/* <Divider variant='fullWidth' /> */}
                 <Container>
-                    <Typography variant="h6" 
-                        style={{
-                            marginTop: '1cm',
-                            marginBottom: '1cm',
+                    <div style={{
+                        paddingLeft: '10%',
+                        paddingRight: '10%',
+                        marginBottom: '1cm',
+                        marginTop: '1cm',
+                    }}>
+                        <Typography variant="h4" style={{
+                            color: 'grey',
                             fontFamily: 'ComicNeue',
                             textAlign: 'center',
-                            padding: 10,
-                        }}>I have developed various React Native Apps along with Web Apps using react and REST apis using nodejs and flask.<br/>
-                            I also have experience in developing and deploying
-                        Machine Learning Apps.<br/>
-                            Computer Vision and Conversational AI interests me a lot. Quantum Computation is yet to come. 😉
-                    </Typography>
+                        }}>I'm experienced in</Typography>
+                        <Divider />
+                        <Typography variant="h6" 
+                            style={{
+                                fontFamily: 'ComicNeue',
+                                textAlign: 'center',
+                                color: 'grey',
+                            }}> React Native Apps, React Web Apps, REST apis using nodejs and flask,
+                                developing and deploying Machine Learning Models on Web and App (using tensorflow.js).
+                                I am always intrigued by and ready to work new technologies.
+                                Computer Vision and Conversational AI interests me a lot.
+                                I am accquainted with Neural Networks, Deep Learning Algorithms, Machine Learning Algorithms and more.
+                        </Typography>
+                    </div>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'space-around',
                         flexWrap: 'wrap',
                         padding: 10,
+                        paddingLeft: '10%',
+                        paddingRight: '10%',
                     }}>
-                        <img src={js} height="80" width="80" alt='js' />
-                        {/* <img src={html} height="80" width="80" /> */}
-                        {/* <img src={css3} height="80" width="80" /> */}
-                        <img src={expo} height="80" width="100" alt='expo' />
-                        <img src={aws} height="80" width="100" alt='aws' />
-                        {/* <img src={rn} height="80" width="80" /> */}
-                        <img src={react} height="100" width="130" alt='react' />
-                        {/* <img src={java} height="80" width="60" /> */}
-                        <img src={mongo} height="80" width="210" alt="mongo" />
-                        <img src={flask} height="80" width="80" alt="flask" />
-                        <img src={mui} height="100" width="100"  alt='mui'/>
-                        {/* <img src={mmui} height="80" width="100" /> */}
-                        <img src={redux} height="80" width="80" alt='redux' />
-                        {/* <img src={cpp} height="80" width="80" /> */}
-                        <img src={nav} height="80" width="80" alt='nav' />
+                        <img src={js} height="60" width="60" alt='js' />
+                        {/* <img src={html} height="60" width="60" /> */}
+                        <img src={tfjs} height="80" width="140"  alt="tfjs" />
+                        <img src={expo} height="60" width="80" alt='expo' />
+                        <img src={aws} height="60" width="80" alt='aws' />
+                        {/* <img src={rn} height="60" width="60" /> */}
+                        <img src={react} height="80" width="110" alt='react' />
+                        {/* <img src={java} height="60" width="60" /> */}
+                        <img src={mongo} height="60" width="150" alt="mongo" />
+                        <img src={flask} height="60" width="60" alt="flask" />
+                        <img src={mui} height="80" width="80"  alt='mui'/>
+                        {/* <img src={mmui} height="60" width="100" /> */}
+                        <img src={redux} height="60" width="60" alt='redux' />
+                        {/* <img src={cpp} height="60" width="60" /> */}
+                        <img src={nav} height="60" width="60" alt='nav' />
                         {/* <img src={node} height="80" width="100" /> */}
                     </div>
                     {/* <img src={node} height="80" width="80" /> */}

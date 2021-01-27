@@ -3,8 +3,9 @@ import {
     Typography,
     // Card,
     // Paper
+    Container
 } from '@material-ui/core';
-
+import terminal from '../images/terminal.png'
 class Experience extends React.Component {
 
     render() {
@@ -13,9 +14,9 @@ class Experience extends React.Component {
                 marginTop: '1cm',
                 marginBottom: '1cm'
             }}>
-                <Typography variant="h1" style={{
-                    fontFamily: 'ComicNeue'
-                }}>Experience</Typography>
+                <Container>
+                    <img src={terminal} height="75" width="75" />
+                </Container>
             </div>
         )
     }
