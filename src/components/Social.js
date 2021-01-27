@@ -1,10 +1,10 @@
 import React from 'react'
-import {
-    Typography,
-    // Card,
-    // Paper,
-    IconButton
-} from '@material-ui/core';
+// import {
+//     Typography,
+//     // Card,
+//     // Paper,
+//     IconButton
+// } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
 import InstagramIcon from '@material-ui/icons/Instagram';

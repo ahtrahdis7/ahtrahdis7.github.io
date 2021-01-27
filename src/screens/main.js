@@ -10,8 +10,8 @@ import Divider from '@material-ui/core/Divider';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
-import Social from '../components/Social';
-import CodeIcon from '@material-ui/icons/Code';
+// import Social from '../components/Social';
+// import CodeIcon from '@material-ui/icons/Code';
 
 class Main extends React.Component{
 
@@ -84,7 +84,19 @@ class Main extends React.Component{
                 </div>
                 <Divider />
                 <div>
-                    <h1>Footer</h1>
+                    <div style={{
+                        marginTop: '1cm',
+                        marginBottom: '1cm'
+                    }}>
+                        <Container>
+                            <Typography style={{
+                                fontFamily: 'ComicNeue',
+                                color: 'grey',
+                                marginBottom: '1cm'
+                            }} variant="h4" >Footer</Typography>
+                            
+                        </Container>
+                    </div>
                 </div>
                 {/* <Social /> */}
             </div>

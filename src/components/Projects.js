@@ -3,6 +3,7 @@ import {
     Typography,
     // Card,
     // Paper
+    Container
 } from '@material-ui/core';
 
 class Projects extends React.Component {
@@ -13,9 +14,14 @@ class Projects extends React.Component {
                 marginTop: '1cm',
                 marginBottom: '1cm'
             }}>
-                <Typography variant="h1" style={{
-                    fontFamily: 'ComicNeue'
-                }}>Projects</Typography>
+                <Container>
+                    <Typography style={{
+                        fontFamily: 'ComicNeue',
+                        color: 'grey',
+                        marginBottom: '1cm'
+                    }} variant="h4" >Projects</Typography>
+                    
+                </Container>
             </div>
         )
     }
