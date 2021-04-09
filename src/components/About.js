@@ -45,7 +45,9 @@ class About extends React.Component {
                     <Grid container>
                         <Grid item xs={12} md={5}>
                             <div style={{
+                                    marginTop: 10,
                                     padding: 1,
+                                    marginLeft: 40,
                             }}>
                                 <img src={ProfilePic} height="400" width="400" alt='prof' />
                             </div>
@@ -58,7 +60,8 @@ class About extends React.Component {
                                     // alignItems: 'flex-start',
                                     justifyContent: 'center',
                                     height: 400,
-                                    padding: 10,
+                                    // paddingTop: 10,
+                                    // paddingBottom: 10,
                             }}>
                                 <Typography variant="h5" style={{
                                     color: 'grey',
