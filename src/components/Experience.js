@@ -23,7 +23,7 @@ class ExpCard extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            show: false,
+            show: true,
             // data: props.exp
         }
         this.handleClick = this.handleClick.bind(this);
@@ -40,10 +40,10 @@ class ExpCard extends React.Component{
     render() {
         const exp = this.props.exp;
         return(
-            <Card key={exp.key} onClick={this.handleClick} style={{
+            <Card key={exp.key} style={{
                 padding: 10,
                 margin: 0
-            }} >
+            }} raised={true} >
                 <div style={{
 
                 }}>

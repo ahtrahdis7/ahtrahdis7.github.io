@@ -45,9 +45,9 @@ class About extends React.Component {
                     <Grid container>
                         <Grid item xs={12} md={5}>
                             <div style={{
-                                    marginTop: 10,
-                                    padding: 1,
-                                    marginLeft: 40,
+                                    // marginTop: 10,
+                                    // padding: 10,
+                                    // marginLeft: 40,
                             }}>
                                 <img src={ProfilePic} height="400" width="400" alt='prof' />
                             </div>
@@ -96,10 +96,10 @@ class About extends React.Component {
                 {/* <Divider variant='fullWidth' /> */}
                 <Container>
                     <div style={{
-                        paddingLeft: '10%',
-                        paddingRight: '10%',
-                        marginBottom: '1cm',
-                        marginTop: '1cm',
+                        // paddingLeft: '10%',
+                        // paddingRight: '10%',
+                        // marginBottom: '1cm',
+                        // marginTop: '1cm',
                     }}>
                         <Typography variant="h4" style={{
                             color: 'grey',
@@ -110,7 +110,7 @@ class About extends React.Component {
                         <Typography variant="h6" 
                             style={{
                                 fontFamily: 'ComicNeue',
-                                textAlign: 'center',
+                                textAlign: 'justify',
                                 color: 'grey',
                             }}> React Native Apps, React Web Apps, REST apis using nodejs and flask,
                                 developing and deploying Machine Learning Models on Web and App (using tensorflow.js).
@@ -119,6 +119,7 @@ class About extends React.Component {
                                 I am accquainted with Neural Networks, Deep Learning Algorithms, Machine Learning Algorithms and more.
                         </Typography>
                     </div>
+                    <br></br>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'row',

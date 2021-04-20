@@ -35,7 +35,7 @@ const NavBar = () => {
                             flexDirection: 'row',
                             alignItems:  'flex-end'
                         }}>
-                            <a href="#experience" style={{
+                            <a href="https://www.linkedin.com/in/mallicksidhartha7/" style={{
                                 color: 'white'
                             }}>
                             <Typography variant="h6" style={{
@@ -46,7 +46,7 @@ const NavBar = () => {
                                 marginRight: 10,
                             }}> Work</Typography>
                             </a>
-                            <a href="#projects" style={{
+                            <a href="https://www.linkedin.com/in/mallicksidhartha7/" style={{
                                 color: 'white'
                             }}>
                             <Typography variant="h6" style={{
@@ -84,11 +84,11 @@ class Main extends React.Component{
                     height: 1
                 }}  />
                 <div id="experience">
-                    <Experience />
+                    {/* <Experience /> */}
                 </div>
                 <Divider />
                 <div id="projects">
-                    <Projects />
+                    {/* <Projects /> */}
                 </div>
                 <Divider />
                 <div>
