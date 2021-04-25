@@ -25,10 +25,13 @@ class Social extends React.Component {
                 justifyContent: 'flex-start'
             }}>
                 
-                <a href="https://github.com/ahtrahdis7" ><GitHubIcon style={{ fontSize: 30, color: 'grey' }} /> </a>
-                <a href="https://www.linkedin.com/in/mallicksidhartha7/" ><LinkedInIcon style={{ fontSize: 30, color: 'grey' }}   /></a>
-                <a href="mailto:mallicksidhartha7@gmail.com" ><MailIcon style={{ fontSize: 30, color: 'grey' }}  /></a>
-                <a href="https://www.instagram.com/sidmallick7/" ><InstagramIcon style={{ fontSize: 30, color: 'grey' }} /></a>
+                <a href="https://github.com/ahtrahdis7" target="_blank"><GitHubIcon style={{ fontSize: 30, color: 'white' }} /> </a>
+                <a href="https://www.linkedin.com/in/mallicksidhartha7/" target="_blank"><LinkedInIcon style={{ fontSize: 30, color: 'white' }}   /></a>
+                <a href="mailto:mallicksidhartha7@gmail.com" ><MailIcon style={{ fontSize: 30, color: 'white' }}  /></a>
+                <a href="https://www.instagram.com/sidhartha.m7/" target="_blank"><InstagramIcon style={{ fontSize: 30, color: 'white' }} /></a>
+                <a href="https://open.spotify.com/user/31befgzrzqebeulnax65copcgtre" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Spotify-icon.png" width="30px" alt="spotify"/>
+                </a>	
             </div>
         )
     }

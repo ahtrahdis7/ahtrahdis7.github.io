@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfilePic from '../images/profile.png';
+import ProfilePic from './prf.jpeg';
 import {
     Typography,
     // Card,
@@ -32,7 +32,7 @@ class About extends React.Component {
     render() {
         return(
             <div style={{
-                marginTop: '3cm',
+                marginTop: '2cm',
                 marginBottom: '1cm',
                 // padding: 5,
             }}>
@@ -43,8 +43,9 @@ class About extends React.Component {
                     marginBottom: '1cm'
                 }}>
                     <Grid container>
-                        <Grid item xs={12} md={5}>
+                        <Grid item xs={12} md={6}>
                             <div style={{
+                                textAlign: 'center',
                                     // marginTop: 10,
                                     // padding: 10,
                                     // marginLeft: 40,
@@ -52,7 +53,7 @@ class About extends React.Component {
                                 <img src={ProfilePic} height="400" width="400" alt='prof' />
                             </div>
                         </Grid>
-                        <Grid item xs={12} md={7}>
+                        <Grid item xs={12} md={6}>
                             <div style={{
                                     // flex: 1,
                                     display: 'flex',
@@ -64,27 +65,27 @@ class About extends React.Component {
                                     // paddingBottom: 10,
                             }}>
                                 <Typography variant="h5" style={{
-                                    color: 'grey',
+                                    color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
                                 }}>Hey There,</Typography>
                                 <Typography variant="h2" style={{
-                                color: 'grey',
+                                color: '#c2c2c2',
                                 fontFamily: 'ComicNeue'
                                 }}>I'm <span style={{color: '#293863'}}>Sidhartha</span> </Typography>
                                 <Typography variant="h3" style={{
-                                    color: 'grey',
+                                    color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
                                 }}>React Native Developer</Typography>
                                 <Typography variant="h4" style={{
-                                    color: 'grey',
+                                    color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
                                 }}>Full Stack Javascript</Typography>
                                 <Typography variant="h5" style={{
-                                    color: 'grey',
+                                    color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
                                 }}>Machine Learning Engineer</Typography>
                                 <Typography variant="h6" style={{
-                                    color: 'grey',
+                                    color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
                                 }}>With a keen inclination towards the open source ecosystem.</Typography>
                                 <Social />
@@ -102,16 +103,17 @@ class About extends React.Component {
                         // marginTop: '1cm',
                     }}>
                         <Typography variant="h4" style={{
-                            color: 'grey',
+                            color: '#c2c2c2',
                             fontFamily: 'ComicNeue',
                             textAlign: 'center',
-                        }}>I'm experienced in</Typography>
+                        }}>I have experience in</Typography>
                         <Divider />
                         <Typography variant="h6" 
                             style={{
                                 fontFamily: 'ComicNeue',
                                 textAlign: 'justify',
-                                color: 'grey',
+                                color: '#c2c2c2',
+                                // fontWeight: 500,
                             }}> React Native Apps, React Web Apps, REST apis using nodejs and flask,
                                 developing and deploying Machine Learning Models on Web and App (using tensorflow.js).
                                 I am always intrigued by and ready to work new technologies.
@@ -119,8 +121,8 @@ class About extends React.Component {
                                 I am accquainted with Neural Networks, Deep Learning Algorithms, Machine Learning Algorithms and more.
                         </Typography>
                     </div>
-                    <br></br>
-                    <div style={{
+                    {/* <br></br> */}
+                    {/* <div style={{
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'space-around',
@@ -128,24 +130,24 @@ class About extends React.Component {
                         padding: 10,
                         paddingLeft: '10%',
                         paddingRight: '10%',
-                    }}>
-                        <img src={js} height="60" width="60" alt='js' />
+                    }}> */}
+                        {/* <img src={js} height="60" width="60" alt='js' /> */}
                         {/* <img src={html} height="60" width="60" /> */}
-                        <img src={tfjs} height="80" width="140"  alt="tfjs" />
-                        <img src={expo} height="60" width="80" alt='expo' />
-                        <img src={aws} height="60" width="80" alt='aws' />
+                        {/* <img src={tfjs} height="80" width="140"  alt="tfjs" /> */}
+                        {/* <img src={expo} height="60" width="80" alt='expo' /> */}
+                        {/* <img src={aws} height="60" width="80" alt='aws' /> */}
                         {/* <img src={rn} height="60" width="60" /> */}
-                        <img src={react} height="80" width="110" alt='react' />
+                        {/* <img src={react} height="80" width="110" alt='react' /> */}
                         {/* <img src={java} height="60" width="60" /> */}
-                        <img src={mongo} height="60" width="150" alt="mongo" />
-                        <img src={flask} height="60" width="60" alt="flask" />
-                        <img src={mui} height="80" width="80"  alt='mui'/>
+                        {/* <img src={mongo} height="60" width="150" alt="mongo" /> */}
+                        {/* <img src={flask} height="60" width="60" alt="flask" /> */}
+                        {/* <img src={mui} height="80" width="80"  alt='mui'/> */}
                         {/* <img src={mmui} height="60" width="100" /> */}
-                        <img src={redux} height="60" width="60" alt='redux' />
+                        {/* <img src={redux} height="60" width="60" alt='redux' /> */}
                         {/* <img src={cpp} height="60" width="60" /> */}
-                        <img src={nav} height="60" width="60" alt='nav' />
+                        {/* <img src={nav} height="60" width="60" alt='nav' /> */}
                         {/* <img src={node} height="80" width="100" /> */}
-                    </div>
+                    {/* </div> */}
                     {/* <img src={node} height="80" width="80" /> */}
                 </Container>
             </div>

@@ -12,13 +12,16 @@ import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 // import Social from '../components/Social';
 // import CodeIcon from '@material-ui/icons/Code';
+import Resume from './resume.pdf'
+
+const backgroundColor = 'black';
 
 const NavBar = () => {
     return(
         <div>
             <AppBar position='fixed'>
                 <Toolbar style={{
-                    backgroundColor: 'white'
+                    backgroundColor: 'black'
                 }}>
                     <Container style={{
                         display: 'flex',
@@ -27,7 +30,7 @@ const NavBar = () => {
                     }}>
                         <Typography variant="h5" style={{
                             flexGrow: 1,
-                            color: 'black',
+                            color: 'white',
                             fontFamily: 'ComicNeue'
                         }}>Ahtrahdis7</Typography>
                         <div style={{
@@ -36,26 +39,26 @@ const NavBar = () => {
                             alignItems:  'flex-end'
                         }}>
                             <a href="https://www.linkedin.com/in/mallicksidhartha7/" style={{
-                                color: 'white'
+                                color: backgroundColor
                             }}>
                             <Typography variant="h6" style={{
                                 flexGrow: 1,
-                                color: 'black',
+                                color: 'white',
                                 fontFamily: 'ComicNeue',
                                 marginLeft: 10,
                                 marginRight: 10,
                             }}> Work</Typography>
                             </a>
-                            <a href="https://www.linkedin.com/in/mallicksidhartha7/" style={{
-                                color: 'white'
+                            <a download href={Resume} style={{
+                                color: backgroundColor
                             }}>
                             <Typography variant="h6" style={{
                                 flexGrow: 1,
-                                color: 'black',
+                                color: 'white',
                                 fontFamily: 'ComicNeue',
                                 marginLeft: 10,
                                 marginRight: 10
-                            }}>Projects</Typography>
+                            }}>Resume</Typography>
                             </a>
                         </div>
                     </Container>
@@ -70,27 +73,31 @@ class Main extends React.Component{
     render(){
 
         return(
-            <div>
+            <div style={{
+                // backgroundColor: backgroundColor,
+                verticalAlign: 'middle',
+                height: '100%'
+            }}>
                 <div style={{
                     flexGrow: 1
                 }}>
                     <NavBar />
                 </div>
-                <Divider />
+                <Divider light={true} />
                 <div id="about">
                     <About />
                 </div>
-                <Divider style={{
+                {/* <Divider style={{
                     height: 1
                 }}  />
                 <div id="experience">
-                    {/* <Experience /> */}
+                    <Experience />
                 </div>
                 <Divider />
                 <div id="projects">
-                    {/* <Projects /> */}
-                </div>
-                <Divider />
+                    <Projects />
+                </div> */}
+                {/* <Divider light />
                 <div>
                     <div style={{
                         marginTop: '1cm',
@@ -99,13 +106,13 @@ class Main extends React.Component{
                         <Container>
                             <Typography style={{
                                 fontFamily: 'ComicNeue',
-                                color: 'grey',
+                                color: 'white',
                                 marginBottom: '1cm'
                             }} variant="h4" >Footer</Typography>
                             
                         </Container>
                     </div>
-                </div>
+                </div> */}
                 {/* <Social /> */}
             </div>
         )
