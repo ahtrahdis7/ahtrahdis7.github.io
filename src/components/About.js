@@ -8,24 +8,79 @@ import {
     Grid,
     Divider
 } from '@material-ui/core';
+import Chip from '@material-ui/core/Chip';
 // import rn from '../tech_Icons/RN.png'
-import aws from '../tech_Icons/aws.png'
-import expo from '../tech_Icons/expo.png'
+// import aws from '../tech_Icons/aws.png'
+// import expo from '../tech_Icons/expo.png'
 // import html from '../tech_Icons/html.png'
 // import css3 from '../tech_Icons/css3.png'
-import js from '../tech_Icons/js.png'
+// import js from '../tech_Icons/js.png'
 // import java from '../tech_Icons/java.png'
-import redux from '../tech_Icons/redux.png'
-import nav from '../tech_Icons/nav.png'
+// import redux from '../tech_Icons/redux.png'
+// import nav from '../tech_Icons/nav.png'
 // import mmui from '../tech_Icons/mmui.png'
 // import node from '../tech_Icons/node.png'
-import react from '../tech_Icons/react.png'
-import flask from '../tech_Icons/flask.png'
+// import react from '../tech_Icons/react.png'
+// import flask from '../tech_Icons/flask.png'
 // import cpp from '../tech_Icons/c++.png'
-import mui from '../tech_Icons/mui.png'
-import mongo from '../tech_Icons/mongo.png'
-import tfjs from '../tech_Icons/tfjs.png'
+// import mui from '../tech_Icons/mui.png'
+// import mongo from '../tech_Icons/mongo.png'
+// import tfjs from '../tech_Icons/tfjs.png'
 import Social from './Social';
+
+function Stacks(){
+    return(
+        <div>
+            <Grid container style={{
+                    textAlign: 'center',
+                    marginTop: 20,
+                }}>
+                <Grid item xs={12} md={3} >
+                <Typography style={{
+                        color: '#c2c2c2',
+                        fontFamily: 'ComicNeue',
+                        marginTop: 10,
+                    }} variant="h5">
+                        Databases<br></br> <Chip label="MongoDB" size="small"/> <Chip label="MySQL" size="small"/> <Chip label="PostgreSQL" size="small"/> 
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={3}>
+                    <Typography style={{
+                        color: '#c2c2c2',
+                        fontFamily: 'ComicNeue',
+                        marginTop: 10,
+                    }} variant="h5">
+                        Languages <br></br> 
+                        <Chip label="C++" size="small"/> <Chip label="JavaScript" size="small"/> <Chip label="Golang" size="small"/> <Chip label="Python" size="small"/>
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={3}>
+                    <Typography style={{
+                        color: '#c2c2c2',
+                        fontFamily: 'ComicNeue',
+                        marginTop: 10,
+                    }} variant="h5">
+                        Libraries <br></br> 
+                        <Chip label="React" size="small" /> <Chip label="React Native" size="small"/> <Chip label="Redux" size="small"/> <Chip label="Pandas" size="small"/>
+                        <Chip label="NumPy" size="small"/> <Chip label="SciPy" size="small"/> 
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={3}>
+                    <Typography style={{
+                        color: '#c2c2c2',
+                        fontFamily: 'ComicNeue',
+                        marginTop: 10,
+                    }} variant="h5">
+                        Frameworks <br></br> 
+                        <Chip label="TensorFlow" size="small"/> <Chip label="Express.js" size="small"/> <Chip label="Flask" size="small"/> <Chip label="Expo" size="small"/> 
+                    </Typography>
+                </Grid>
+            </Grid>
+            
+
+        </div>
+    )
+}
 
 class About extends React.Component {
 
@@ -72,18 +127,18 @@ class About extends React.Component {
                                 color: '#c2c2c2',
                                 fontFamily: 'ComicNeue'
                                 }}>I'm <span style={{color: '#293863'}}>Sidhartha</span> </Typography>
-                                <Typography variant="h3" style={{
-                                    color: '#c2c2c2',
-                                    fontFamily: 'ComicNeue'
-                                }}>React Native Developer</Typography>
                                 <Typography variant="h4" style={{
                                     color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
-                                }}>Full Stack Javascript</Typography>
+                                }}>Full Stack Javascript Developer</Typography>
+                                {/* <Typography variant="h4" style={{
+                                    color: '#c2c2c2',
+                                    fontFamily: 'ComicNeue'
+                                }}>React and React Native</Typography> */}
                                 <Typography variant="h5" style={{
                                     color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
-                                }}>Machine Learning Engineer</Typography>
+                                }}>Machine Learning Developer</Typography>
                                 <Typography variant="h6" style={{
                                     color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
@@ -105,7 +160,7 @@ class About extends React.Component {
                         <Typography variant="h4" style={{
                             color: '#c2c2c2',
                             fontFamily: 'ComicNeue',
-                            textAlign: 'center',
+                            // textAlign: 'center',
                         }}>I have experience in</Typography>
                         <Divider />
                         <Typography variant="h6" 
@@ -121,6 +176,12 @@ class About extends React.Component {
                                 I am accquainted with Neural Networks, Deep Learning Algorithms, Machine Learning Algorithms and more.
                         </Typography>
                     </div>
+                    {/* <hr class="solid" style={{
+                        borderTop: 0.5,
+                        borderRight: 0,
+                        borderLeft: 0
+                    }}></hr> */}
+                    <Stacks />
                     {/* <br></br> */}
                     {/* <div style={{
                         display: 'flex',
