@@ -62,7 +62,7 @@ function Stacks(){
                     }} variant="h5">
                         Libraries <br></br> 
                         <Chip label="React" size="small" /> <Chip label="React Native" size="small"/> <Chip label="Redux" size="small"/> <Chip label="Pandas" size="small"/>
-                        <Chip label="NumPy" size="small"/> <Chip label="SciPy" size="small"/> 
+                        {/* <Chip label="NumPy" size="small"/> <Chip label="SciPy" size="small"/>  */}
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={3}>
@@ -138,11 +138,20 @@ class About extends React.Component {
                                 <Typography variant="h5" style={{
                                     color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
-                                }}>Machine Learning Developer</Typography>
+                                }}>MLops, Fitness AI, Android/iOS</Typography>
+                                <Typography variant="h5" style={{
+                                    color: '#c2c2c2',
+                                    fontFamily: 'ComicNeue'
+                                }}>Freelancer</Typography>
                                 <Typography variant="h6" style={{
                                     color: '#c2c2c2',
                                     fontFamily: 'ComicNeue'
                                 }}>With a keen inclination towards the open source ecosystem.</Typography>
+                                <Typography variant="h6" style={{
+                                    color: '#c2c2c2',
+                                    fontFamily: 'ComicNeue',
+                                    // textAlign: 'center',
+                                }}>Developed India's first, fully functional, computer vision based fitness app on android.</Typography>
                                 <Social />
                             </div>
                         </Grid>
@@ -157,20 +166,20 @@ class About extends React.Component {
                         // marginBottom: '1cm',
                         // marginTop: '1cm',
                     }}>
-                        <Typography variant="h4" style={{
+                        {/* <Typography variant="h5" style={{
                             color: '#c2c2c2',
                             fontFamily: 'ComicNeue',
                             // textAlign: 'center',
-                        }}>I have experience in</Typography>
-                        <Divider />
+                        }}>Developed India's first fully functional computer vision based fitness app on android.</Typography> */}
+                        {/* <Divider /> */}
                         <Typography variant="h6" 
                             style={{
                                 fontFamily: 'ComicNeue',
                                 textAlign: 'justify',
                                 color: '#c2c2c2',
                                 // fontWeight: 500,
-                            }}> React Native Apps, React Web Apps, REST apis using nodejs and flask,
-                                developing and deploying Machine Learning Models on Web and App (using tensorflow.js).
+                            }}> I have experience in developing Android/iOS RN Apps, Web Apps, REST apis using nodejs and flask,
+                                developing and deploying Machine Learning Models using tensorflow.js.
                                 I am always intrigued by and ready to work new technologies.
                                 Computer Vision and Conversational AI interests me a lot.
                                 I am accquainted with Neural Networks, Deep Learning Algorithms, Machine Learning Algorithms and more.
