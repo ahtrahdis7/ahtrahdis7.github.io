@@ -151,7 +151,7 @@ class About extends React.Component {
                                     color: '#c2c2c2',
                                     fontFamily: 'ComicNeue',
                                     // textAlign: 'center',
-                                }}>Developed India's first, fully functional, computer vision based fitness app on android.</Typography>
+                                }}>Developed a fully functional, computer vision based fitness app on android.</Typography>
                                 <Social />
                             </div>
                         </Grid>
